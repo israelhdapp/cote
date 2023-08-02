@@ -1,5 +1,5 @@
 {
-  "name": "@israelhd/cote",
+  "name": "cote-plus",
   "version": "1.0.4",
   "keywords": [
     "microservices",
@@ -11,7 +11,7 @@
     "scalable",
     "fault-tolerant"
   ],
-  "description": "A Node.js library for building zero-configuration microservices.",
+  "description": "Fork of original cote - A Node.js library for building zero-configuration microservices.",
   "scripts": {
     "coverage": "nyc -x=\"**/examples/*\" -x=\"**/*balanced*.js\" -x=\"**/test/*.js\" -x=\"**/lib/*.js\" report",
     "lint": "eslint src test",
