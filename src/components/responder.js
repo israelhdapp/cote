@@ -18,6 +18,7 @@ module.exports = class Responder extends Configurable(Component) {
 
             if (this.listeners(req.type).length === 0 && this.discoveryOptions.logUnknownEvents) {
                 this.discovery.log([this.advertisement.name, '>', `No listeners found for event: ${req.type}`.yellow]);
+                this.emit('no-listeners-found', req, cb)
             }
 
             this.emit(req.type, req, cb);
